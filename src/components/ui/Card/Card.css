@@ -1,0 +1,83 @@
+/* ===== Base Card ===== */
+.card {
+  border-radius: 16px;
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+
+/* ===== Padding ===== */
+.card--pad-sm {
+  padding: 14px;
+}
+
+.card--pad-md {
+  padding: 22px;
+}
+
+.card--pad-lg {
+  padding: 32px;
+}
+
+/* ===== Variant: Elevated ===== */
+.card--elevated {
+  background: white;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08),
+              0 4px 12px rgba(0, 0, 0, 0.06);
+}
+
+/* ===== Variant: Outlined ===== */
+.card--outlined {
+  background: white;
+  border: 1.5px solid #e5e7eb;
+}
+
+/* ===== Variant: Filled ===== */
+.card--filled {
+  background: #f3f4f6;
+}
+
+/* ===== Hoverable ===== */
+.card--hoverable:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1),
+              0 4px 10px rgba(0, 0, 0, 0.04);
+}
+
+.card--outlined.card--hoverable:hover {
+  border-color: #3b82f6;
+}
+
+/* ===== Clickable ===== */
+.card--clickable {
+  cursor: pointer;
+}
+
+.card--clickable:active {
+  transform: scale(0.98);
+}
+
+/* ===== Sub-components ===== */
+.card__header {
+  padding-bottom: 14px;
+  border-bottom: 1px solid #f3f4f6;
+  margin-bottom: 14px;
+  font-weight: 600;
+  font-size: 1.05rem;
+  color: #111827;
+}
+
+.card__body {
+  flex: 1;
+  color: #4b5563;
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
+.card__footer {
+  padding-top: 14px;
+  border-top: 1px solid #f3f4f6;
+  margin-top: 14px;
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+}

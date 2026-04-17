@@ -32,7 +32,7 @@ function Button ({
         fullWidth ? 'btn--full' : '',
         loading ? 'btn--loading' : '',
         className,
-    ].filter(Boolean).join('');
+    ].filter(Boolean).join(' ');
 
     return (
         <button className={classes} disabled={disabled || loading} {...rest}>

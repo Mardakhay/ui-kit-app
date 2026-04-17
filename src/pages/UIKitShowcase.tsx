@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Button, Input, Card } from '../ui';
+import { Button, Input, Card } from '../components/ui';
 
 export default function UIKitShowcase() {
   const [inputValue, setInputValue] = useState('');

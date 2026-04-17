@@ -49,7 +49,6 @@ export default function MaterialShowcase() {
         <p className="showcase__subtitle">Button, TextField, Card</p>
       </header>
 
-      {/* ===== BUTTONS ===== */}
       <section className="section">
         <h2 className="section__title">
           🔘 Button <span className="badge badge--blue">6 variants</span>
@@ -112,7 +111,6 @@ export default function MaterialShowcase() {
         <Button variant="outlined" fullWidth color="secondary">Tam Eni ilə Outlined</Button>
       </section>
 
-      {/* ===== TEXTFIELD ===== */}
       <section className="section">
         <h2 className="section__title">
           ✏️ TextField <span className="badge badge--green">3 variants</span>
@@ -175,7 +173,6 @@ export default function MaterialShowcase() {
         <TextField label="Bio" multiline rows={3} placeholder="Haqqınızda..." fullWidth />
       </section>
 
-      {/* ===== CARDS ===== */}
       <section className="section">
         <h2 className="section__title">
           🃏 Card <span className="badge badge--purple">Composable</span>

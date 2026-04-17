@@ -1,0 +1,114 @@
+/* ===== Input Wrapper ===== */
+.input-wrapper {
+  margin-bottom: 20px;
+  display: inline-flex;
+  flex-direction: column;
+}
+
+.input--full {
+  width: 100%;
+}
+
+/* ===== Label ===== */
+.input__label {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #374151;
+  transition: color 0.2s ease;
+}
+
+/* ===== Field Container ===== */
+.input__field {
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  transition: all 0.2s ease;
+  overflow: hidden;
+}
+
+.input__field input {
+  flex: 1;
+  padding: 11px 14px;
+  border: none;
+  background: transparent;
+  font-size: 0.95rem;
+  font-family: inherit;
+  outline: none;
+  color: #111827;
+  width: 100%;
+}
+
+.input__field input::placeholder {
+  color: #9ca3af;
+}
+
+/* ===== Variant: Outlined ===== */
+.input--outlined {
+  border: 2px solid #d1d5db;
+  background: white;
+}
+
+.input--outlined:focus-within {
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.12);
+}
+
+/* ===== Variant: Filled ===== */
+.input--filled {
+  background: #f3f4f6;
+  border: 2px solid transparent;
+}
+
+.input--filled:focus-within {
+  background: #ffffff;
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.12);
+}
+
+/* ===== Variant: Standard ===== */
+.input--standard {
+  border-bottom: 2px solid #d1d5db;
+  border-radius: 0;
+  background: transparent;
+}
+
+.input--standard:focus-within {
+  border-color: #3b82f6;
+}
+
+/* ===== Error State ===== */
+.input--error .input__field {
+  border-color: #ef4444 !important;
+}
+
+.input--error .input__field:focus-within {
+  box-shadow: 0 0 0 3px rgba(239, 68, 68, 0.12);
+}
+
+.input--error .input__label {
+  color: #ef4444;
+}
+
+/* ===== Helper Text ===== */
+.input__helper {
+  display: block;
+  margin-top: 5px;
+  font-size: 0.8rem;
+  color: #6b7280;
+}
+
+.input__helper--error {
+  color: #ef4444;
+}
+
+/* ===== Icon ===== */
+.input__icon {
+  padding-left: 12px;
+  color: #9ca3af;
+  display: inline-flex;
+  align-items: center;
+  font-size: 1.1em;
+  flex-shrink: 0;
+}
